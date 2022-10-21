@@ -13,18 +13,18 @@ const GamerFilter = ({ currentFilter, setCurrentFilter }) => {
         Partidas:
         <select
           id="game-filter"
-          defaultValue={ currentFilter }
+          defaultValue={currentFilter}
           data-testid="matches__option_show_finish_matches"
         >
           <option>Todos os Jogos</option>
-          <option>Em andamento</option>
+          <option>A realizar</option>
           <option>Finalizado</option>
         </select>
       </label>
       <button
         data-testid="matches__search_match_btn"
         type="button"
-        onClick={ () => handleCurrentFilter() }
+        onClick={() => handleCurrentFilter()}
       >
         Buscar
       </button>
@@ -32,9 +32,9 @@ const GamerFilter = ({ currentFilter, setCurrentFilter }) => {
   );
 };
 
-GamerFilter.propTypes = ({
+GamerFilter.propTypes = {
   currentFilter: PropTypes.string,
   setCurrentFilter: PropTypes.func,
-}).isRequired;
+}.isRequired;
 
 export default GamerFilter;
