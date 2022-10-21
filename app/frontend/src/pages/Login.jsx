@@ -52,7 +52,6 @@ const Login = () => {
       <section className="user-login-area">
         <img src={footballLogo1} alt="Trybe Futebol Clube Negative Logo" />
         <form>
-          <h1>Área do usuário</h1>
           <h1 className="text-admin">
             Área destinada ao ADMINISTRADOR DA PÁGINA
           </h1>
