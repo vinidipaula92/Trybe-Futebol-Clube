@@ -54,7 +54,7 @@ const Login = () => {
         <form>
           <h1>Área do usuário</h1>
           <h1 className="text-admin">
-            Esta área está destinada somente ao ADMINISTRADOR DA PÁGINA
+            Área destinada ao ADMINISTRADOR DA PÁGINA
           </h1>
           <label htmlFor="email-input">
             <input
