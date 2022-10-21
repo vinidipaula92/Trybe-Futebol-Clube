@@ -3,3 +3,7 @@ export { default as negativeLogo } from './negative_logo.png';
 export { default as check } from './check.png';
 export { default as editIcon } from './pencil.png';
 export { default as positiveLogo } from './positive_logo.png';
+export { default as footballLogo1 } from './1.png';
+export { default as footballLogo2 } from './2.png';
+export { default as footballLogo3 } from './3.png';
+export { default as footballLogo4 } from './4.png';
