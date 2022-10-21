@@ -84,3 +84,42 @@
   font-style: normal;
   text-align: center;
 }
+
+.text-admin {
+  animation: typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+  overflow: hidden;
+  color: black;
+  letter-spacing: .15rem;
+  border-right: .2em solid black;
+    font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  justify-content: center;
+  color: black;
+  margin-top: 20px;
+  background-color: white;
+  font-family: sans-serif;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}

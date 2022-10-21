@@ -53,6 +53,9 @@ const Login = () => {
         <img src={footballLogo1} alt="Trybe Futebol Clube Negative Logo" />
         <form>
           <h1>Área do usuário</h1>
+          <h1 className="text-admin">
+            Esta área está destinada somente ao ADMINISTRADOR DA PÁGINA
+          </h1>
           <label htmlFor="email-input">
             <input
               className="login__login_input"
