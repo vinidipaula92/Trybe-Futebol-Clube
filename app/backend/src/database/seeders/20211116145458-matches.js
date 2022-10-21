@@ -2028,10 +2028,10 @@ module.exports = {
         },
         {
           away_team: 10,
-          away_team_goals: 0,
+          away_team_goals: 1,
           home_team: 20,
-          home_team_goals: 0,
-          in_progress: true,
+          home_team_goals: 3,
+          in_progress: false,
         }, // fim da rodada 29
         {
           away_team: 9,
