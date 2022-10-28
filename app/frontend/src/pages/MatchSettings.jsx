@@ -51,7 +51,11 @@ const MatchSettings = () => {
 
   const getTeam = (team, homeOrAway) => {
     const { id } = teams.find(({ teamName }) => teamName === team);
-    if (homeOrAway === 'homeTeam') { setHomeTeam(id); } else { setAwayTeam(id); }
+    if (homeOrAway === 'homeTeam') {
+      setHomeTeam(id);
+    } else {
+      setAwayTeam(id);
+    }
   };
 
   const createMatch = async (inProgress) => {
@@ -72,12 +76,15 @@ const MatchSettings = () => {
   };
   const finishMatch = async (id) => {
     await api.patch(`/matches/${id}/finish`);
+    alert('Partida finalizada com sucesso!');
+    navigate('/matches');
   };
 
   if (!isAuthenticated) return <Loading />;
 
   if (location.state) {
-    const { id,
+    const {
+      id,
       teamHome: homeTeamState,
       homeTeamGoals,
       teamAway: awayTeamState,
@@ -87,19 +94,19 @@ const MatchSettings = () => {
       <>
         <Header
           page="EDITAR PARTIDA"
-          FirstNavigationLink={ MatchesBtn }
-          logged={ isAuthenticated }
-          setLogin={ setIsAuthenticated }
+          FirstNavigationLink={MatchesBtn}
+          logged={isAuthenticated}
+          setLogin={setIsAuthenticated}
         />
         <EditGame
-          homeTeam={ [homeTeamState] }
-          awayTeam={ [awayTeamState] }
-          homeTeamGoals={ homeTeamGoals }
-          awayTeamGoals={ awayTeamGoals }
-          idMatch={ id }
-          updateMatch={ updateMatch }
-          finishMatch={ finishMatch }
-          getTeam={ getTeam }
+          homeTeam={[homeTeamState]}
+          awayTeam={[awayTeamState]}
+          homeTeamGoals={homeTeamGoals}
+          awayTeamGoals={awayTeamGoals}
+          idMatch={id}
+          updateMatch={updateMatch}
+          finishMatch={finishMatch}
+          getTeam={getTeam}
         />
       </>
     );
@@ -109,17 +116,17 @@ const MatchSettings = () => {
     <>
       <Header
         page="ADICIONAR PARTIDA"
-        FirstNavigationLink={ MatchesBtn }
-        logged={ isAuthenticated }
-        setLogin={ setIsAuthenticated }
+        FirstNavigationLink={MatchesBtn}
+        logged={isAuthenticated}
+        setLogin={setIsAuthenticated}
       />
       <CreateNewGame
-        setHomeTeamScoreboard={ setHomeTeamScoreboard }
-        setAwayTeamScoreboard={ setAwayTeamScoreboard }
-        teams={ teams }
-        getTeam={ getTeam }
-        createMatch={ createMatch }
-        finishMatch={ finishMatch }
+        setHomeTeamScoreboard={setHomeTeamScoreboard}
+        setAwayTeamScoreboard={setAwayTeamScoreboard}
+        teams={teams}
+        getTeam={getTeam}
+        createMatch={createMatch}
+        finishMatch={finishMatch}
       />
     </>
   );
