@@ -2588,9 +2588,9 @@ module.exports = {
         },
         {
           away_team: 1,
-          away_team_goals: 0,
+          away_team_goals: 1,
           home_team: 18,
-          home_team_goals: 0,
+          home_team_goals: 2,
           in_progress: false,
         }, // fim da rodada 37
         {
