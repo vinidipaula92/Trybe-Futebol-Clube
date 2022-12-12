@@ -2196,10 +2196,10 @@ module.exports = {
         },
         {
           away_team: 9,
-          away_team_goals: 0,
+          away_team_goals: 2,
           home_team: 15,
-          home_team_goals: 0,
-          in_progress: true,
+          home_team_goals: 2,
+          in_progress: false,
         },
         {
           away_team: 10,
