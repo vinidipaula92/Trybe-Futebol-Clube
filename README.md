@@ -1,4 +1,4 @@
-# Seja bem vindo ao projeto Trybe Futebol Clube! ⚽️
+# Seja bem vindo ao projeto Brazilian League! ⚽️
 
 ## Stack utilizada
 
@@ -20,9 +20,9 @@
 
 ![Exemplo app front](assets/admin.gif)
 
-O `TFC` é um site informativo sobre partidas e classificações de futebol simulando a tabela do Brasileirão 2022! ⚽️
+O `Brazilian League` é um site informativo sobre partidas e classificações de futebol simulando a tabela do Brasileirão 2022! ⚽️
 
-1. Foi desenvolvo o `TFC`, onde fiquei responsável por desenvolver uma API (utilizando o método `TDD`) e também integrar _- através do docker-compose -_ as aplicações para que elas funcionem consumindo um banco de dados.
+1. Foi desenvolvo o `Brazilian League`, onde fiquei responsável por desenvolver uma API (utilizando o método `TDD`) e também integrar _- através do docker-compose -_ as aplicações para que elas funcionem consumindo um banco de dados.
 
 Nesse projeto, eu construi **um back-end dockerizado utilizando modelagem de dados através do Sequelize**.O desenvolvimento deste projeto **respeitou regras de negócio** e **a API é consumida pelo front-end**.
 
