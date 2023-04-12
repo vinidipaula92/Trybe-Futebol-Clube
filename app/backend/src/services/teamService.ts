@@ -13,4 +13,9 @@ export default class TeamsService implements ITeams {
     const team = await this.db.findByPk(id);
     return team as ITeamsName;
   }
+
+  async updateTeams(id: number, teamName: string): Promise<ITeamsName> {
+    const team = await this.db.update({ teamName }, { where: { id } });
+    return team as unknown as ITeamsName;
+  }
 }

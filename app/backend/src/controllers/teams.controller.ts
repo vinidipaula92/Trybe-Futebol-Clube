@@ -15,4 +15,11 @@ export default class TeamController {
     const team = await this.teamController.getTeamById(Number(id));
     res.status(StatusCodes.OK).json(team);
   }
+
+  async updateTeams(req: Request, res: Response) {
+    const { id } = req.params;
+    const { teamName } = req.body;
+    const team = await this.teamController.updateTeams(Number(id), teamName);
+    res.status(StatusCodes.OK).json(team);
+  }
 }
