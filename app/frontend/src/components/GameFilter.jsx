@@ -1,5 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
 const GamerFilter = ({ currentFilter, setCurrentFilter }) => {
   const handleCurrentFilter = () => {
@@ -16,7 +16,6 @@ const GamerFilter = ({ currentFilter, setCurrentFilter }) => {
           defaultValue={currentFilter}
           data-testid="matches__option_show_finish_matches"
         >
-          <option>Todos os Jogos</option>
           <option>A realizar</option>
           <option>Finalizado</option>
         </select>
